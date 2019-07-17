@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<serviceType xmlns="http://www.sonicsw.com/sonicxq" name="ArkaFix5" factoryClass="com.alida.fix.ArkaFix5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sonicsw.com/sonicxq file%3A%2F%2F%2FC%3A%2FAurea%2FSonicCX%2FESB10.0%2Fschema%2FserviceType.xsd">
+	<validParams>
+		<init>
+		    <stringParam name="QuickFIX_Settings" required="true">
+		        <default edittable="true" editAsRef="false">C:\Aurea\SonicCX\Containers\fixconfig\arka50LinuxWin.cfg</default>
+		    </stringParam>
+		    <stringParam name="Sonic_Settings" required="true">
+		        <default edittable="true" editAsRef="false">C:\Aurea\SonicCX\Containers\fixconfig\broker50.properties</default>
+		    </stringParam>
+		</init>
+	</validParams>	
+	<classLoading>
+	    <serviceType>
+	        <classpath_list>
+	            <classpath>sonicfs:///workspace/ArkaFix5/lib/custom-services-classes.jar</classpath>
+	        </classpath_list>
+	    </serviceType>
+	    <xqContainer>
+	        <classpath_list>
+	            <classpath>sonicfs:///workspace/ArkaFix5/lib/camel-test-spring-2.17.0.jar</classpath>
+	            <classpath>sonicfs:///workspace/ArkaFix5/lib/slf4j-log4j12-1.7.21.jar</classpath>
+	            <classpath>sonicfs:///workspace/ArkaFix5/lib/camel-spring-2.15.1.jar</classpath>
+	            <classpath>sonicfs:///workspace/ArkaFix5/lib/camel-jetty8-2.15.1.jar</classpath>
+	            <classpath>sonicfs:///workspace/ArkaFix5/lib/org.apache.servicemix.bundles.quickfix-1.6.1_1.jar</classpath>
+	            <classpath>sonicfs:///workspace/ArkaFix5/lib/custom-services-classes.jar</classpath>
+	            <classpath>sonicfs:///workspace/ArkaFix5/lib/slf4j-api-1.7.10.jar</classpath>
+	            <classpath>sonicfs:///workspace/ArkaFix5/lib/mina-core-2.0.9.jar</classpath>
+	            <classpath>sonicfs:///workspace/ArkaFix5/lib/mockito-core-1.9.5.jar</classpath>
+	            <classpath>sonicfs:///workspace/ArkaFix5/lib/camel-quickfix-2.9.1.jar</classpath>
+	            <classpath>sonicfs:///workspace/ArkaFix5/lib/broker.jar</classpath>
+	            <classpath>sonicfs:///workspace/ArkaFix5/lib/commons-collections-3.2.2.jar</classpath>
+	            <classpath>sonicfs:///workspace/ArkaFix5/lib/camel-core-2.17.3.jar</classpath>
+	            <classpath>sonicfs:///workspace/ArkaFix5/lib/Extras/spring-context-2.0.4.jar</classpath>
+	            <classpath>sonicfs:///workspace/ArkaFix5/lib/Extras/camel-jetty-common-2.15.0.jar</classpath>
+	            <classpath>sonicfs:///workspace/ArkaFix5/lib/Extras/hamcrest-core-1.3.jar</classpath>
+	            <classpath>sonicfs:///workspace/ArkaFix5/lib/Extras/junit-4.4.jar</classpath>
+	            <classpath>sonicfs:///workspace/ArkaFix5/lib/Extras/org.eclipse.jetty.util.jar</classpath>
+	            <classpath>sonicfs:///workspace/ArkaFix5/lib/Extras/jetty-util-9.2.11.v20150529.jar</classpath>
+	            <classpath>sonicfs:///workspace/ArkaFix5/lib/Extras/camel-test-2.17.3.jar</classpath>
+	            <classpath>sonicfs:///workspace/ArkaFix5/lib/Extras/camel-context-2.17.3.jar</classpath>
+	            <classpath>sonicfs:///workspace/ArkaFix5/lib/Extras/jetty-server-8.1.19.v20160209.jar</classpath>
+	            <classpath>sonicfs:///workspace/ArkaFix5/lib/Extras/javax.servlet.jar</classpath>
+	        </classpath_list>
+	    </xqContainer>
+	</classLoading>
+</serviceType>

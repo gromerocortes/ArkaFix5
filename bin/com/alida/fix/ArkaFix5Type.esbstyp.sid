@@ -26,8 +26,8 @@
    <scenarios xmlns="http://sonic.esb.org/scenario/"/>
    <service-instances>
       <service-instance xmlns="" default="true" name="ArkaFix5Instance">
-         <container>FixContainer50</container>
-         <wsdl-url/>
+         <container>EsbContainer</container>
+         <wsdl-url></wsdl-url>
          <endpoints>
             <entry-endpoint name="ArkaFix5Instance.Entry" type="ENDPOINT"/>
             <exit-endpoints>
